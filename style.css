@@ -210,3 +210,10 @@ a {
 a:hover {
     color: white;
 }
+
+.recipe .left-column p {
+    color: #ffffff;
+}
+.recipe .left-column h2 {
+    color: #ffffff;
+}
