@@ -84,6 +84,7 @@ header h1 {
 .left-column p {
     font-size: 1rem;
     max-width: 700px;
+    color: #ffffff;
 }
 
 .right-column img {
