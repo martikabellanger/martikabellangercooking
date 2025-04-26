@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat;
     line-height: 1.6;
     background-color: #fff;
 }
@@ -27,19 +27,19 @@ header h1 {
 /* INTRO */
 .intro {
     background-color: #f9f1df;
-    padding: 40px 20px;
+    padding: 40px 100px;
     text-align: center;
 }
 
 .intro-images {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     margin-bottom: 20px;
 }
 
 .intro-images img {
-    width: 800px;
+    width: 960px;
     height: auto;
     object-fit: cover;
 }
