@@ -47,14 +47,14 @@ header h1 {
 /* SECTION RECETTE */
 .recipe {
     background-color: #4c7c44;
-    padding: 40px 20px;
+    padding: 0px 0px;
 }
 
 .recipe-grid {
     display: flex;
     align-items: center;
     gap: 20px;
-    max-height: 400px; /* Ajout : limite la hauteur totale */
+    max-height: 200px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
