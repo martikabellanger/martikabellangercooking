@@ -17,6 +17,8 @@ header {
     height: 80px;
     padding: 0px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 header h1 {
