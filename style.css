@@ -95,30 +95,41 @@ header h1 {
 
 /* INGREDIENTS */
 .ingredients {
-    background-color: #f9f1df;
-    padding: 40px 20px;
+    background-color: #4c7c44;
+    padding: 0px 0px;
+    overflow: hidden;
 }
 
-.ingredients-content {
+.ingredients-grid {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    height: 550px; /* Ajout : limite la hauteur totale */
+}
+
+.right-column, .left-column {
+    flex: 1; /* Chaque colonne prend 50% de l'espace */
+    height: 100%;
+}
+
+.right-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    align-items: center; /* Centre horizontalement */
+    text-align: center;
+    color: white;
+    padding: 0px;
+
+.right-column p {
+    font-size: 1rem;
+    max-width: 700px;
 }
 
-.ingredients-content img {
-    width: 960px;
-    height: auto;
-}
-
-.ingredients-text {
-    text-align: left;
-    max-width: 500px;
-}
-
-.ingredients-text ul {
-    list-style: disc;
-    margin: 10px 0 20px 20px;
+.left-column img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    object-fit: cover; /* Facultatif ici, mais garde l’image bien cadrée */
 }
 
 /* SAUCE */
