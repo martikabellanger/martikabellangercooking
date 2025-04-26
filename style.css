@@ -52,8 +52,9 @@ header h1 {
 
 .recipe-grid {
     display: flex;
-    align-items: center; /* Centre verticalement les contenus dans chaque colonne */
-    gap: 0px; /* Espace entre les deux colonnes */
+    align-items: center;
+    gap: 20px;
+    max-height: 400px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
