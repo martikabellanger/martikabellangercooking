@@ -66,17 +66,17 @@ header h1 {
     align-items: center; /* Centre horizontalement */
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 0px;
 }
 
 .left-column h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .left-column p {
     font-size: 1.2rem;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .right-column img {
