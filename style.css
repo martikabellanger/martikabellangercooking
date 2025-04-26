@@ -54,7 +54,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 20px;
-    max-height: 200px; /* Ajout : limite la hauteur totale */
+    max-height: 350px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
@@ -82,7 +82,7 @@ header h1 {
 
 .right-column img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 0px;
     object-fit: cover; /* Facultatif ici, mais garde l’image bien cadrée */
 }
