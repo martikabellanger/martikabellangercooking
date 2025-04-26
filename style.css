@@ -48,17 +48,19 @@ header h1 {
 .recipe {
     background-color: #4c7c44;
     padding: 0px 0px;
+    overflow: hidden;
 }
 
 .recipe-grid {
     display: flex;
     align-items: center;
     gap: 20px;
-    max-height: 350px; /* Ajout : limite la hauteur totale */
+    height: 350px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
     flex: 1; /* Chaque colonne prend 50% de l'espace */
+    height: 100%;
 }
 
 .left-column {
