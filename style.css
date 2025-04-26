@@ -17,13 +17,13 @@ header {
     height: 80px;
     padding: 0px 0;
     text-align: center;
+    justify-content: center;
     display: flex;
     align-items: center;
 }
 
 header h1 {
     color: white;
-    text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
