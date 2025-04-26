@@ -76,13 +76,13 @@ header h1 {
     padding: 0px;
 }
 
-.left-column h2 {
+.recipe .left-column h2 {
     font-size: 1.8rem;
     margin-bottom: 0px;
     color: #ffffff;
 }
 
-.left-column p {
+.recipe .left-column p {
     font-size: 1rem;
     max-width: 700px;
     color: #ffffff;
