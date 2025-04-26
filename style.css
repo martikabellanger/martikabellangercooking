@@ -107,7 +107,7 @@ header h1 {
     height: 550px; /* Ajout : limite la hauteur totale */
 }
 
-.right-column, .left-column {
+.left-column, .right-column {
     flex: 1; /* Chaque colonne prend 50% de l'espace */
     height: 100%;
 }
@@ -116,8 +116,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre horizontalement */
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: #fff;
     padding: 0px;
 
 .right-column p {
