@@ -50,42 +50,40 @@ header h1 {
     padding: 40px 20px;
 }
 
-.recipe h2 {
-    color: white;
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+.recipe-grid {
+    display: flex;
+    align-items: center; /* Centre verticalement les contenus dans chaque colonne */
+    gap: 0px; /* Espace entre les deux colonnes */
 }
 
-.recipe-content {
+.left-column, .right-column {
+    flex: 1; /* Chaque colonne prend 50% de l'espace */
+}
+
+.left-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px; /* Ajoute un peu d'espace entre les lignes */
-}
-
-.row {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    gap: 20px; /* Espace entre le texte et l'image */
-}
-
-.row.reverse {
-    flex-direction: row-reverse; /* Inverse l'ordre pour la 2e ligne */
-}
-
-.row .text {
+    align-items: center; /* Centre horizontalement */
+    text-align: center;
     color: white;
-    max-width: 400px;
-    font-size: 1.2rem;
-    text-align: justify;
+    padding: 20px;
 }
 
-.row img {
-    width: 600px; /* Ajuste la taille de l'image */
+.left-column h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.left-column p {
+    font-size: 1.2rem;
+    max-width: 400px;
+}
+
+.right-column img {
+    width: 100%;
     height: auto;
     border-radius: 0px;
+    object-fit: cover; /* Facultatif ici, mais garde l’image bien cadrée */
 }
 
 /* INGREDIENTS */
