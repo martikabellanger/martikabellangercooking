@@ -221,53 +221,60 @@ a:hover {
 
 /* -------------------- RESPONSIVE OPTIMISÉ -------------------- */
 
-/* Pour les écrans de moins de 1200px (grands écrans, tablettes horizontales) */
-@media (max-width: 1200px) {
+/* Pour les écrans de plus de 1200px (grands écrans) */
+@media (min-width: 1201px) {
     .intro-images {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row; /* Les images côte à côte */
+        justify-content: space-between;
         align-items: center;
+        gap: 20px; /* Espacement entre les images */
     }
 
     .intro-images img {
-        width: 100%; /* Prend toute la largeur du conteneur */
-        max-width: none; /* Retirer la restriction max-width */
+        width: 48%; /* Les images prennent 48% de la largeur du conteneur */
         height: auto;
+        object-fit: cover;
     }
 
-    .recipe-grid, 
-    .ingredients-grid, 
-    .sauce-grid {
-        flex-direction: column;
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .left-column, 
-    .right-column {
-        width: 100%;
-        height: auto;
-        padding: 10px 20px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .right-column p {
-        margin: 10px 0;
-    }
-
-    .right-column img,
-    .left-column img {
-        width: 100%; /* Prend toute la largeur du conteneur */
-        height: auto;
-        object-fit: contain;
+    .intro p {
+        font-size: 1.1rem;
+        padding: 0 20px;
+        text-align: left;
     }
 
     footer {
-        padding: 30px 20px;
+        padding: 40px 20px;
     }
 }
 
-/* Pour les écrans de moins de 768px (mobiles) */
+/* Pour les écrans de moins de 1200px (tablettes et grands écrans) */
+@media (max-width: 1200px) {
+    .intro-images {
+        flex-direction: column; /* Les images sont empilées les unes sur les autres */
+        align-items: center;
+        gap: 15px; /* Espacement entre les images */
+    }
+
+    .intro-images img {
+        width: 100%; /* Les images prennent 100% de la largeur du conteneur */
+        max-width: 100%; /* Enlever toute limite de largeur */
+        height: auto;
+        object-fit: cover; /* Remplir l'espace sans déformation */
+    }
+
+    .intro p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
+
+/* Pour les écrans de moins de 768px (tablettes et mobiles) */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
@@ -281,23 +288,24 @@ a:hover {
     footer p {
         font-size: 1rem;
         padding: 0 10px;
+        text-align: center;
+    }
+
+    .intro-images {
+        flex-direction: column; /* Empiler les images verticalement */
+        align-items: center;
+        gap: 15px; /* Espacement entre les images */
     }
 
     .intro-images img {
-        width: 100%; /* Prend toute la largeur du conteneur */
+        width: 100%; /* Les images prennent toute la largeur du conteneur */
         height: auto;
+        object-fit: cover; /* Remplir l'espace sans déformation */
     }
 
     .left-column h2,
     footer h2 {
         font-size: 1.4rem;
-    }
-
-    .left-column p,
-    .right-column p {
-        font-size: 1rem;
-        margin: 10px 0;
-        text-align: center;
     }
 
     .recipe-grid,
@@ -308,19 +316,6 @@ a:hover {
 
     footer {
         padding: 20px 10px;
-    }
-}
-
-/* Sur mobile, les images doivent prendre toute la largeur de l'écran */
-@media (max-width: 768px) {
-    .intro-images img, /* Images dans la section intro */
-    .recipe .right-column img, /* Images dans la section recette */
-    .ingredients .left-column img, /* Images dans la section ingrédients */
-    .sauce .right-column img { /* Images dans la section sauce */
-        width: 100%;  /* Forcer l'image à prendre 100% de la largeur du conteneur */
-        height: auto; /* Conserver les proportions de l'image */
-        object-fit: cover; /* Remplir l'espace sans déformation */
-        max-width: none; /* Retirer toute restriction sur la largeur maximale */
     }
 }
 
@@ -341,6 +336,8 @@ a:hover {
     .sauce .left-column p,
     footer p {
         font-size: 0.9rem;
+        padding: 0 10px;
+        text-align: center;
     }
 
     /* Sur très petits écrans, forcer les images à 100% de la largeur */
