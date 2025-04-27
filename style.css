@@ -221,26 +221,26 @@ a:hover {
 
 /* -------------------- RESPONSIVE OPTIMISÉ -------------------- */
 
-/* Pour les écrans de plus de 1200px (grands écrans) */
+/* Pour les écrans de plus de 1200px (grands écrans - desktop) */
 @media (min-width: 1201px) {
     .intro-images {
         display: flex;
         flex-direction: row; /* Les images côte à côte */
         justify-content: space-between;
         align-items: center;
-        gap: 20px; /* Espacement entre les images */
+        gap: 0; /* Aucun espacement entre les images */
     }
 
     .intro-images img {
-        width: 48%; /* Les images prennent 48% de la largeur du conteneur */
+        width: 50%; /* Les images prennent 50% de la largeur chacune */
         height: auto;
-        object-fit: cover;
+        object-fit: cover; /* Remplir l'espace sans déformation */
     }
 
     .intro p {
         font-size: 1.1rem;
-        padding: 0 20px;
-        text-align: left;
+        text-align: center; /* Centrer le texte sous les images */
+        padding: 20px 0;
     }
 
     footer {
@@ -257,8 +257,7 @@ a:hover {
     }
 
     .intro-images img {
-        width: 100%; /* Les images prennent 100% de la largeur du conteneur */
-        max-width: 100%; /* Enlever toute limite de largeur */
+        width: 100%; /* Les images prennent toute la largeur du conteneur */
         height: auto;
         object-fit: cover; /* Remplir l'espace sans déformation */
     }
