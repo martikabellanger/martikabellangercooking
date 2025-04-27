@@ -229,8 +229,8 @@ a:hover {
     }
 
     .intro-images img {
-        width: 90%;
-        max-width: 600px;
+        width: 100%; /* Prend toute la largeur du conteneur */
+        max-width: none; /* Retirer la restriction max-width */
         height: auto;
     }
 
@@ -257,8 +257,7 @@ a:hover {
 
     .right-column img,
     .left-column img {
-        width: 90%;
-        max-width: 500px;
+        width: 100%; /* Prend toute la largeur du conteneur */
         height: auto;
         object-fit: contain;
     }
@@ -270,9 +269,6 @@ a:hover {
 
 /* Pour les écrans de moins de 768px (mobiles) */
 @media (max-width: 768px) {
-     .recipe .left-column p {
-    line-height: 1.3; /* Espacement plus serré sur mobile seulement */
-  }
     header h1 {
         font-size: 1.5rem;
         padding: 0 10px;
@@ -288,8 +284,7 @@ a:hover {
     }
 
     .intro-images img {
-        width: 100%;
-        max-width: 400px;
+        width: 100%; /* Prend toute la largeur du conteneur */
         height: auto;
     }
 
@@ -311,24 +306,6 @@ a:hover {
         padding: 10px 0;
     }
 
-    .recipe .right-column img {
-        width: 100%; /* Image prend toute la largeur de l'écran */
-        height: auto; /* Conserve les proportions de l'image */
-        object-fit: cover; /* Remplir l'espace sans déformation */
-    }
-
-    .ingredients .left-column img {
-        width: 100%; /* Image prend toute la largeur de l'écran */
-        height: auto; /* Conserve les proportions de l'image */
-        object-fit: cover; /* Remplir l'espace sans déformation */
-    }
-
-    .sauce .right-column img {
-        width: 100%; /* Image prend toute la largeur de l'écran */
-        height: auto; /* Conserve les proportions de l'image */
-        object-fit: cover; /* Remplir l'espace sans déformation */
-    }
-
     footer {
         padding: 20px 10px;
     }
@@ -342,15 +319,13 @@ a:hover {
     .sauce .right-column img { /* Images dans la section sauce */
         width: 100%;  /* Forcer l'image à prendre 100% de la largeur du conteneur */
         height: auto; /* Conserver les proportions de l'image */
-        object-fit: cover; /* Facultatif pour que l'image remplisse bien l'espace sans déformation */
+        object-fit: cover; /* Remplir l'espace sans déformation */
+        max-width: none; /* Retirer toute restriction sur la largeur maximale */
     }
 }
 
 /* Pour les écrans très petits (moins de 480px) */
 @media (max-width: 480px) {
-     .recipe .left-column p {
-    line-height: 1.3; /* Espacement plus serré sur mobile seulement */
-  }
     header h1 {
         font-size: 1.2rem;
     }
@@ -367,16 +342,15 @@ a:hover {
     footer p {
         font-size: 0.9rem;
     }
-}
 
-/* Sur mobile, les images doivent prendre toute la largeur de l'écran */
-@media (max-width: 480px) {
+    /* Sur très petits écrans, forcer les images à 100% de la largeur */
     .intro-images img, /* Images dans la section intro */
     .recipe .right-column img, /* Images dans la section recette */
     .ingredients .left-column img, /* Images dans la section ingrédients */
     .sauce .right-column img { /* Images dans la section sauce */
         width: 100%;  /* Forcer l'image à prendre 100% de la largeur du conteneur */
         height: auto; /* Conserver les proportions de l'image */
-        object-fit: cover; /* Facultatif pour que l'image remplisse bien l'espace sans déformation */
+        object-fit: cover; /* Remplir l'espace sans déformation */
+        max-width: none; /* Retirer toute restriction sur la largeur maximale */
     }
 }
