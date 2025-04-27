@@ -236,7 +236,8 @@ a:hover {
 
     .intro-images img {
         width: 100%; /* Les images prennent toute la largeur du conteneur */
-        max-width: 760px;
+        height: auto;
+        max-width: none;
     }
 
     .intro p {
@@ -390,6 +391,7 @@ a:hover {
     .intro-images img {
         width: 100%; /* Les images prennent toute la largeur de l'écran */
         height: auto;
+        max-width: none; /* Les images prennent toute la largeur du conteneur */
     }
 
     .left-column h2,
