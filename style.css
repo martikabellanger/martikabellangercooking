@@ -274,14 +274,13 @@ a:hover {
 
     /* INGREDIENTS */
     .ingredients-grid {
-        flex-direction: column; /* Empiler le texte et l'image verticalement */
+        flex-direction: column; /* Empile les éléments verticalement */
         align-items: center;
         gap: 20px; /* Espacement entre le texte et l'image */
     }
 
-    .left-column {
-        width: 100%;
-        text-align: center;
+    .left-column, .right-column {
+        width: 100%; /* Assure que chaque élément prend toute la largeur */
     }
 
     .right-column {
@@ -300,12 +299,30 @@ a:hover {
         margin-bottom: 20px; /* Espacement entre le texte et l'image */
     }
 
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre le contenu de la colonne */
+        text-align: center;
+        justify-content: center;
+    }
+
     .left-column img {
         width: 100%;
         height: auto;
         border-radius: 0px;
-        object-fit: cover; /* Garde l'image bien cadrée */
+        object-fit: cover;
     }
+
+    /* Utilisation de `order` pour garantir que l'image vient après le texte */
+    .right-column img {
+        order: 2; /* Force l'image à venir après le texte */
+    }
+
+    .right-column p {
+        order: 1; /* Force le texte à venir avant l'image */
+    }
+
 }
 
 /* Pour les écrans de moins de 768px (mobiles) */
