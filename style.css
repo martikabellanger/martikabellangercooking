@@ -221,32 +221,6 @@ a:hover {
 
 /* -------------------- RESPONSIVE OPTIMISÉ -------------------- */
 
-/* Pour les écrans de plus de 1200px (grands écrans - desktop) */
-@media (min-width: 1201px) {
-    .intro-images {
-        display: flex;
-        flex-direction: row; /* Les images côte à côte */
-        justify-content: space-between;
-        align-items: center;
-        gap: 0; /* Aucun espacement entre les images */
-    }
-
-    .intro-images img {
-        width: 50%; /* Les images prennent 50% de la largeur chacune */
-        height: auto;
-        object-fit: cover; /* Remplir l'espace sans déformation */
-    }
-
-    .intro p {
-        font-size: 1.1rem;
-        text-align: center; /* Centrer le texte sous les images */
-        padding: 20px 0;
-    }
-
-    footer {
-        padding: 40px 20px;
-    }
-}
 
 /* Pour les écrans de moins de 1200px (tablettes et grands écrans) */
 @media (max-width: 1200px) {
