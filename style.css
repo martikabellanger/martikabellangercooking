@@ -31,7 +31,7 @@ header h1 {
 /* INTRO */
 .intro {
     background-color: #ffe0bb;
-    padding: 0px 200px;
+    padding: 0px 240px;
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ header h1 {
 
 .recipe .left-column p {
     font-size: 1rem;
-    max-width: 550px;
+    max-width: 470px;
     color: #ffffff;
 }
 
@@ -135,7 +135,7 @@ header h1 {
 .right-column p {
     margin-left: 100px;
     font-size: 1rem;
-    max-width: 640px;
+    max-width: 600px;
 }
 
 /* SAUCE */
@@ -174,7 +174,7 @@ header h1 {
 
 .left-column p {
     font-size: 1rem;
-    max-width: 550px;
+    max-width: 470px;
     color: #202020;
 }
 
