@@ -311,6 +311,24 @@ a:hover {
         padding: 10px 0;
     }
 
+    .recipe .right-column img {
+        width: 100%; /* Image prend toute la largeur de l'écran */
+        height: auto; /* Conserve les proportions de l'image */
+        object-fit: cover; /* Remplir l'espace sans déformation */
+    }
+
+    .ingredients .left-column img {
+        width: 100%; /* Image prend toute la largeur de l'écran */
+        height: auto; /* Conserve les proportions de l'image */
+        object-fit: cover; /* Remplir l'espace sans déformation */
+    }
+
+    .sauce .right-column img {
+        width: 100%; /* Image prend toute la largeur de l'écran */
+        height: auto; /* Conserve les proportions de l'image */
+        object-fit: cover; /* Remplir l'espace sans déformation */
+    }
+
     footer {
         padding: 20px 10px;
     }
