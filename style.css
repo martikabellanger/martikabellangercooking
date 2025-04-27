@@ -218,3 +218,132 @@ a:hover {
     color: #ffffff;
 }
 
+
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* Pour les écrans de moins de 1200px (tablettes et grands écrans) */
+@media (max-width: 1200px) {
+    .intro {
+        padding: 0 30px;
+    }
+
+    .intro-images {
+        flex-direction: column; /* Les images sont empilées verticalement */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-images img {
+        width: 100%; /* Les images prennent toute la largeur du conteneur */
+        max-width: 760px;
+    }
+
+    .intro p {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #202020;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .recipe-grid,
+    .ingredients-grid,
+    .sauce-grid {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-column img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
+
+/* Pour les écrans de moins de 768px (mobiles) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p,
+    .recipe .left-column p,
+    .ingredients .right-column p,
+    .sauce .left-column p,
+    footer p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .intro-images {
+        flex-direction: column; /* Les images sont empilées verticalement */
+        align-items: center;
+    }
+
+    .intro-images img {
+        width: 100%;
+        height: auto;
+        max-width: none; /* Les images prennent toute la largeur du conteneur */
+    }
+
+    .left-column h2,
+    footer h2 {
+        font-size: 1.4rem;
+    }
+
+    .left-column p,
+    .right-column p {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
+
+/* Pour les écrans très petits (moins de 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro p,
+    .recipe .left-column p,
+    .ingredients .right-column p,
+    .sauce .left-column p,
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .intro-images img {
+        width: 100%; /* Les images prennent toute la largeur de l'écran */
+        height: auto;
+    }
+
+    .left-column h2,
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
