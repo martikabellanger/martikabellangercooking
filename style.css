@@ -271,6 +271,41 @@ a:hover {
     footer {
         padding: 30px 15px;
     }
+
+    /* INGREDIENTS */
+    .ingredients-grid {
+        flex-direction: column; /* Empiler le texte et l'image verticalement */
+        align-items: center;
+        gap: 20px; /* Espacement entre le texte et l'image */
+    }
+
+    .left-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #202020;
+        padding: 0px 0px;
+    }
+
+    .right-column p {
+        font-size: 1rem;
+        max-width: 600px;
+        margin-bottom: 20px; /* Espacement entre le texte et l'image */
+    }
+
+    .left-column img {
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+        object-fit: cover; /* Garde l'image bien cadrée */
+    }
 }
 
 /* Pour les écrans de moins de 768px (mobiles) */
