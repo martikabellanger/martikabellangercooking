@@ -314,13 +314,19 @@ a:hover {
         object-fit: cover;
     }
 
-    /* Utilisation de `order` pour garantir que l'image vient après le texte */
-    .right-column img {
-        order: 2; /* Force l'image à venir après le texte */
+    /* Changer l'ordre des éléments dans le bloc 'ingredients' */
+    .ingredients-grid {
+        display: flex;
+        flex-direction: column-reverse; /* Inverse l'ordre des éléments : image sous le texte */
     }
 
-    .right-column p {
-        order: 1; /* Force le texte à venir avant l'image */
+    /* Spécifique à 'ingredients' */
+    .ingredients .left-column img {
+        order: 2; /* L'image vient après le texte */
+    }
+
+    .ingredients .right-column p {
+        order: 1; /* Le texte vient avant l'image */
     }
 
 }
