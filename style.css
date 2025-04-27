@@ -316,6 +316,18 @@ a:hover {
     }
 }
 
+/* Sur mobile, les images doivent prendre toute la largeur de l'écran */
+@media (max-width: 768px) {
+    .intro-images img, /* Images dans la section intro */
+    .recipe .right-column img, /* Images dans la section recette */
+    .ingredients .left-column img, /* Images dans la section ingrédients */
+    .sauce .right-column img { /* Images dans la section sauce */
+        width: 100%;  /* Forcer l'image à prendre 100% de la largeur du conteneur */
+        height: auto; /* Conserver les proportions de l'image */
+        object-fit: cover; /* Facultatif pour que l'image remplisse bien l'espace sans déformation */
+    }
+}
+
 /* Pour les écrans très petits (moins de 480px) */
 @media (max-width: 480px) {
      .recipe .left-column p {
@@ -336,5 +348,17 @@ a:hover {
     .sauce .left-column p,
     footer p {
         font-size: 0.9rem;
+    }
+}
+
+/* Sur mobile, les images doivent prendre toute la largeur de l'écran */
+@media (max-width: 480px) {
+    .intro-images img, /* Images dans la section intro */
+    .recipe .right-column img, /* Images dans la section recette */
+    .ingredients .left-column img, /* Images dans la section ingrédients */
+    .sauce .right-column img { /* Images dans la section sauce */
+        width: 100%;  /* Forcer l'image à prendre 100% de la largeur du conteneur */
+        height: auto; /* Conserver les proportions de l'image */
+        object-fit: cover; /* Facultatif pour que l'image remplisse bien l'espace sans déformation */
     }
 }
