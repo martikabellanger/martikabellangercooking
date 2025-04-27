@@ -59,7 +59,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 0px;
-    height: 400px; /* Ajout : limite la hauteur totale */
+    height: 380px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
@@ -106,7 +106,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 0px;
-    height: 550px; /* Ajout : limite la hauteur totale */
+    height: 500px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
@@ -149,7 +149,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 0px;
-    height: 610px; /* Ajout : limite la hauteur totale */
+    height: 550px; /* Ajout : limite la hauteur totale */
 }
 
 .left-column, .right-column {
