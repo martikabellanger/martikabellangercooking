@@ -225,7 +225,7 @@ a:hover {
 /* Pour les écrans de moins de 1200px (tablettes et grands écrans) */
 @media (max-width: 1200px) {
     .intro {
-        padding: 0 30px;
+        padding: 0;
     }
 
     .intro-images {
